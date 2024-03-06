@@ -1,10 +1,16 @@
+<!DOCTYPE html>
 <html>
-<title> Meters to feet</title>
-<form method="POST">
-    <label>Meters: </label>
-    <input type="text" name="textbox" value ="">
-    <label>Feet: </label>
-    <label> </label>
-    <button type="submit" name="submit"> Convert</button>
-</form>
-<html>
+<head>
+    <title>Meters to Feet</title>
+</head>
+<body>
+    <form method="POST" action="/">
+        <label>Meters: </label>
+        <input type="text" name="textbox" value="{{user_text | safe}}">
+        <br>
+        <label>Feet: </label>
+        <label>{{output | safe}} </label> <br>
+        <button type="submit" name="submit">Convert</button>
+    </form>
+</body>
+</html>
